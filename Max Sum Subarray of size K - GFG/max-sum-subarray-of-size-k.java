@@ -59,3 +59,33 @@ class Solution{
 // this will give sum of next window..like this we will keep subtracting 1st element of the previous window
 //and keep adding element next to last elemnt of the previous window and it will give us sum of the current window
 // we will keep updating max sum for the max value...and finally return it
+
+
+//the same can be modified for like question will be 
+//Subarray of size k with given sum
+//Given an array arr[], an integer K and a Sum. The task is to check if there exists any subarray with K elements whose sum is equal to the given sum. 
+//If any of the subarray with size K has the sum equal to the given sum then print YES otherwise print NO.
+
+
+//for this what we have to do is that same approach and code like upper will be followed with some modifications like
+
+/* 
+static boolean checkSubarraySum(int[] arr, int n,
+                    int k, int sum)
+{
+    // Check for first window
+    int curr_sum = 0;
+    for (int i=0; i<k; i++)
+    curr_sum += arr[i];
+    if (curr_sum == sum)
+        return true;
+ 
+    // Consider remaining blocks ending with j
+    for (int j = k; j < n; j++) {
+        curr_sum = curr_sum + arr[j] - arr[j-k];
+        if (curr_sum == sum)
+            return true;    
+    }
+    return false;
+}
+*/
