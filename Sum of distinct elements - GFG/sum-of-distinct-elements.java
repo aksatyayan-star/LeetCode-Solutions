@@ -50,6 +50,9 @@ class Solution {
     }
 }
 
+// HashSet<Integer> s = new HashSet<>(Arrays.aslist(arr));
+// we can directly create hashset using array as above way also...like without using for loop to iterate through whole array and adding each element in hashset one by one
+
 //here its just a basic use case of hashset
 // we iterate the array and we add every elemnt to hashset and the hashset dont contain dupliacte elements
 // so automatically if an element is already there in hashset then it wont be inserted again if encountered during array traversing
