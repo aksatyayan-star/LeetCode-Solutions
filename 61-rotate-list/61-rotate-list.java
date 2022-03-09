@@ -18,23 +18,21 @@ class Solution {
         }
         // if(curr.next==null)
         // {
-        //     return curr.next;
+        //    return curr.next;
         // }
-        // for(int i=0; i<k; i++)
+        /* for(int i=0; i<k; i++)
         // {
         //     while(curr.next.next!=null)
         //     {
         //         curr = curr.next;
         //     }
-        //     ListNode ans=new ListNode(curr.next.val);
-        //     System.out.println(curr.next);
-        //     //ans.next=head;
+        //     ListNode ans=null;
         //     curr.next.next = head;
-        //     System.out.println(curr.next.next.val);
         //     curr.next = null;
-        //     // ans.next=curr;
         //     curr = head;
         // }
+        // return curr;
+        */
         int size=0;
         while(curr.next!=null)
         {
@@ -43,7 +41,6 @@ class Solution {
         }
         size+=1;
         curr.next=head;
-        System.out.println(size);
         ListNode ans=null;
         k=k%size;
         k=size-k;
@@ -62,3 +59,9 @@ class Solution {
         return ans;
     }
 }
+
+// what we are doing is that 1st making a circular list...by connecting last node with head
+// for that we are first running a loop to get the size of the list...to get the tail or last element ...then we connect that tail -> curr.next = head
+// make an empty list...then take k = size-k as from that point we have to break the link
+// so iterate through the loop till k>0...when k = 0 that means we have to stop at that element and break the link there...so store curr.next i.e list from that curr.next in ans list
+// and break the link by doing curr.next = null...and just exit the loop using break
