@@ -51,3 +51,5 @@ class Solution {
 // i.e 3's next as null as we can also see from the output 3 is the last element
 // if in some case odd no of elements are present then we have checker that furth.next==null if yeas then just make curr's next 
 // i.e curr's connection to that last odd element as one element so no swapping needed just connect it
+// and to return the whole list we will hve to keep track of head and head will be the 2nd element of list as we are swapping pair wise
+// so store 2nd element in res as res=curr.next and simply return it
