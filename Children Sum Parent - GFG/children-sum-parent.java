@@ -160,7 +160,8 @@ class Tree
             x = isSumProperty(root.left);
             y = isSumProperty(root.right);
         }
-        if(x==1 && y==1)
+        return  x & y;
+        /*if(x==1 && y==1)
         {
             return 1;
         }
@@ -168,5 +169,6 @@ class Tree
         {
             return 0;
         }
+        */
     }
 }
