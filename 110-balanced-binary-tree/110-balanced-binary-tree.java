@@ -49,6 +49,6 @@ class Solution {
 }
 
 //every function call tells both if a particular subtree is balanced or not and it also returns the height...
-// if unbalanced..function returns -1...else it returns height which can be used to check the balance of other level of tree
+// if unbalanced..function returns -1...else it returns height which can be used to check the balance of other level(nodes) of tree
 // this function returns -1 if a subtree is unbalanced else it returns the height of that subtree
 // if ever -1 is returned then immediately return false as even if one unbalanced subtree the whole tree is unbalanced..else return true in bool isBalanced function
