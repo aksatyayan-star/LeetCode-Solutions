@@ -154,7 +154,7 @@ class Tree
         {
             sum = sum+root.right.data;
         }
-        //return (root.data==sum && isSumProperty(root.left) && isSumProperty(root.right));
+        // return (root.data==sum && (isSumProperty(root.left) && isSumProperty(root.right));
         if(root.data==sum)
         {
             x = isSumProperty(root.left);
@@ -172,3 +172,12 @@ class Tree
         */
     }
 }
+// the concept is simple if root = null or leaf node ie. right and left null then return 1..i.e trur
+// for rest of the conditions find sum of the nodes children compare it to root node's data...if equal 
+// then recursively call for left and right nodes to check for them...i.e is their children sum also equal to parent
+// if yes then x and y will get value 1...as if children sum = parent then 1 is being returned in our function
+// so finally we return x&y which will be 1 only when both x and y =1 as and operator...nd thats what we need
+// we need for every node children sum = parent condition satisfy so if all x and y are 1 then only final return will be 1
+// else if even for one node that condition doesnt hold then return 0; as automatically if either x or y is zero at some stage
+// then x & y will give 0 and once it returned 0 then for previous function calls also like when traversing back in recursion
+// i,e in functuion call stacks... one 0 will be passed which also automatically make final result 0 as x & y..even if one 0 whole result 0
