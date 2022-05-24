@@ -62,6 +62,8 @@ class Solution {
 // as LCA can only be for two nodes...for one single node LCA is meaningless
 // now if present i.e didnt get into if condition that means nodes present and path stored in path1 and path2 respectively for both nodes
 // so traverse both list till the last common element and return it that will be LCA
+// one extra condition added to check when the last element of the smallest array among path1 and path2 is common..
+//then we cant access i+1 as it will be out of bounds...so return last element
 // now coming to findPath function how it is finding the path so the concept is that if path not found i.e node not present then it retuns false else it fills the path and return true
 // so in pathFind function when we get to some root first we check if null then return false
 // else add that node to arraylist i.e path and then check if that nodes val same as req node's val then simply return true...ie we got path
