@@ -120,3 +120,5 @@ class Solution {
 // i.e first left element then right element...but adding it to list there is some modification...for alternate levels we make reverse = true then false
 // when we have to add in normal way there we just directly add to list but in alternate levels we first push to stack
 // and then add to list using that stack to add elements in reverse order...this way we get answer in spiral or zig zag form
+
+// there is also one another more efficient approach of this using 2 stacks
