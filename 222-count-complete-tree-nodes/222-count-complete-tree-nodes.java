@@ -32,6 +32,18 @@ class Solution {
         {
             rightHeight(currr.right);
         }
+        /* while(currl.left!=null)
+        {
+            heightl++;
+            currl = currl.left;
+        }
+        
+        while(currr.right!=null)
+        {
+            heightr++;
+            currr = currr.right;
+        }
+        */
         if(heightl==1 && heightr==1)
         {
             return 1;
@@ -83,3 +95,5 @@ class Solution {
 // extra condition to check when both height = 0 ..in that condition only root node there..so simply return 1
 //else recursilvely call for that root node's left subtree and right subtree whatever value we will get from those two add 1...it will give total nodes
 // as that 1 for the root node whose left and right child we recursively called for...that root node also needs to be added..right
+
+// here in place of writing two extra function to get leftheight and rightheight we could use simple while loop also
