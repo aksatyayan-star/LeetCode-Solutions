@@ -47,6 +47,21 @@ class Solution {
             return insertIntoBST(root.right, val);
         }
         return curr;
+        /*
+        if(root==null)
+        {
+            return new TreeNode(val);
+        }
+        else if(root.val > val)
+        {
+            root.left = insertIntoBST(root.left, val);
+        }
+        else if(root.val < val)
+        {
+            root.right = insertIntoBST(root.right, val);
+        }
+        return root;
+        */
     }
 }
 
@@ -67,3 +82,8 @@ class Solution {
 // whose value is equal to val..i.e the val we had to insert as this is that inserted node only which we just inserted in if condition
 // so it will not fall under any if else conditions and hence go the last and will return curr..ultimately the same thing which we wanted to return
 // same in the case for right calls...thats all..
+
+// the commented code is more simpler one taking care of all the cases as when empty it return the newNode only
+// and also in left and right recursions when we reach a leaf node then for that recursive calls falls under null condition so it returns the newNode 
+// but when it return as the calls are like root.left = that call or root.right = that call so whatever i.e the newNode that function returns when control comes back then it gets connected to either root.left or right depending on the condition
+// nd likewise it backtracks as function calls keeps on finishing so all the connection are remade againa as the funaction call backtracks so in the end we reach root and return root
