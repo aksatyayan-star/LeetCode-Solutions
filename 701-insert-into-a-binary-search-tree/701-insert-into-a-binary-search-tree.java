@@ -32,7 +32,7 @@ class Solution {
             if(root.left==null)
             {
                 root.left = ins;
-                return curr;
+                //return curr;
             }
             return insertIntoBST(root.left, val);
         }
@@ -42,7 +42,7 @@ class Solution {
             if(root.right==null)
             {
                 root.right = ins;
-                return curr;
+                //return curr;
             }
             return insertIntoBST(root.right, val);
         }
