@@ -55,3 +55,5 @@ class Solution {
 // extra condition for last index as i+1 will get out of bounds
 
 // or just a simple trick after sorting if i = nums[i] then fine else that element is missing so return i...
+// nd one extra condition when [0,1] so here i = nums[i] but still size = 2 so elements should be 0,1,2 hence here what happens last element = size-1..i.e 1
+// so in this case return size..i.e 2
