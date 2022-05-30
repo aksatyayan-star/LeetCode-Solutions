@@ -29,6 +29,7 @@ class Solution {
             if(count==k)
             {
                 a = root.val;
+                return a;
             }
             kthSmallest(root.right, k);
         }
@@ -36,4 +37,7 @@ class Solution {
     }
 }
 
-// here 
+// here the concept is simple we have to do inorder traversal as inorder traversal has elements in sorted increasing order..
+// so we can get kth index element that will be kth smallest element...
+// hence what we do we keep track of index as count...so 1st we go to extreme left as in inorder and increase count for each left traversed
+// if count==k then we got there and store that elemnt in a var and return it...else we traverse the right
