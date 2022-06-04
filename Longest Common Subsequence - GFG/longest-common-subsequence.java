@@ -69,7 +69,8 @@ class Solution
 // here in tabulation solution we are going to fill the 2d array in bottom up manner...so to get the value of substring
 // of length 1 and 1 ...we need solutions of 0&0 , 0&1, 1&0..nd hence we need extra 1 row nd column...i.e size of array as x+1 and y+1 to accomodate these
 // now 1st row and 1st column is always going to be zero as that represents either one of the string empty s1 or s2..nd hence even if one zero the LCS zero
-// rest of the entries we fill in the same way as we did it in memorization concept...here just instead of recursive call for those values...we run a for loop and
+// rest of the entries we fill in the same way as we did it in memorization concept...here just instead of recursive call for those values...
+// we run a for loop starting from 1..i.e 2nd row nd column for both rows and columns as 1st row and 1st column already filled with 0 and
 // we directly fetch it from 2d array as we had already stored there as its a bottom up approach...the last cell will always have the result..ie tab[x][y] will give us LCS value
 
 
