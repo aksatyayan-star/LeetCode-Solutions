@@ -24,3 +24,5 @@ class Solution {
         return dp[amount][n];
     }
 }
+
+//here its dp tabulation method solution of this problem...our goal is to find the no of possible ways ..like diff no of combinations of coins to get a given amount of sum
