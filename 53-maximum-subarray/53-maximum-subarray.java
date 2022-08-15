@@ -17,5 +17,6 @@ class Solution {
 // in kadene's what we do is first assume 1st element as sum and max ending
 // then we traverse starting from 2nd element, and assuming that , that elemnt is the ending element of that subarray...
 //likewise we consider further particular element in coming iterations as the ending elemnt of that subarray 
-//and we check that how we get max sum for that subarray by adding the previous element(or prev maxEnding or you can say max sum upto that element) to that element or by just taking that particular element individually...whichever max is the next maxEnding
+//and we check that how we get max sum for that subarray by adding the previous element(or prev maxEnding or you can say max sum upto that element) to that new element or by just taking that particular new element individually...whichever max is the next maxEnding
+// if we took only the next particular element..it means we started our subarray from there and skipped the previous elements as they were not contributing in max sum
 // and if that is greater than the sum then we update sum also..else we move on to next iteration
