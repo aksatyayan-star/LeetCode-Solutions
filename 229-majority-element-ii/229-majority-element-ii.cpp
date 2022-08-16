@@ -3,7 +3,8 @@ public:
     vector<int> majorityElement(vector<int>& nums) {
         int a=0,b=0,c1=0,c2=0;
         vector<int>v;
-        for(auto &c:nums){
+        for(int i=0;i<nums.size();i++){
+            int c=nums[i];
             if(a==c)
                 c1++;
             else if(b==c)
