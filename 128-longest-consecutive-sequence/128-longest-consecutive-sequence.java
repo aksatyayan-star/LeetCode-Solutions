@@ -60,4 +60,8 @@ class Solution {
     }
 }
 
-//as we have to find the solution in O(n)
+// as we have to find the solution in O(n)...so we gonna use hashset to store all the elements first
+// then traverse the array and check if an element less 1 not present in hashset...then it means it is the least element
+// and we can start counting from that element for elements more 1...so initialize count =1 and that element as curr_element
+// then start counting till element+1 presnt in hashset..once element+1 not presemt in hashset update max with max of earlier max and current count value
+// this way we will get the max count...so finally return max
