@@ -21,14 +21,14 @@ class Solution {
             if(arr[i+1]-arr[i]==1)
             {
                 count++;
-                max = Math.max(max,count);
+                //max = Math.max(max,count);
                 
             }
             else
             {
-                max = Math.max(max,count);
                 count = 1;
             }
+            max = Math.max(max,count);
         }
         return max;
     }
